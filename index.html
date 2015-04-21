@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+      <!-- Include jQuery Mobile stylesheets -->
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+      <!-- Include the jQuery library -->
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!-- Include the jQuery Mobile library -->
+      <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+      <!-- Include the css for swatch colors -->
+<link rel="stylesheet" href="css/themes/chihubJQMobAssignment.min.css" />
+      <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+      <link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+      <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+      
+
+      <script>
+        //reset type=date inputs to text
+         $( document ).bind( "mobileinit", function(){
+           $.mobile.page.prototype.options.degradeInputs.date = true;
+             });   
+       </script>
+
+       <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+       <script src="jQuery.ui.datepicker.js"></script>
+      <script src="jquery.ui.datepicker.mobile.js"></script>
+      
+    </head>
+    
+    <body>
+        
+        <div data-role="page" id="homePage" data-theme="c">
+            <div data-role="header">
+                <h1>Chicago Hub</h1>
+            </div>
+            <div data-role="main">
+                <h3>Group Members</h3>
+                <ul>
+                    <li>Kanika Batra</li>
+                    <li>Urja Desai</li>
+                    <li>Brittany Foster</li>
+                    <li>Hebah Bubakr</li>
+                    <li>Robert Martinez</li>
+                </ul>
+<p align="center">
+<img src="images/imgchi.jpg" alt="ChicagoFood" align="middle"></p>
+                <p>Chicago Hub is a website that helps people to search restaurants in Chicago neighborhood. Here we have a way to search for a place where our taste buds are happy and to avoid any bad experiences by eating at a place that does not meet our expectations. Chicago Hub will save you time, satisfy your taste, and make you happy either if you are by yourself, with a friend, or even with your family. Have a look and try using Chicago Hub.</p>
+                <p>jQuery mobile assignment. This is the home page of the assignment. You can find a restaurant here: <a href="#findRestaurantPage" data-transition="flow">Find Restaurant</a>, or comunicate whit us in the contact page: <a href="#contactPage" data-transition="fade">Contact page</a>. However we encouraged you to use the footer icons! </p>
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a data-icon="home"></a></li>
+                        <li><a href="#findRestaurantPage" data-transition="flow" data-icon="location"></a></li>
+                        <li><a href="#contactPage" data-transition="fade" data-icon="mail"></a></li>
+                    </ul>
+                </div>
+                <h2>Copyright &copy; 2014 by ChicagoHub</h2>
+            </div>
+        </div>
+        
+        <div data-role="page" id="findRestaurantPage" data-theme="d">
+            <div data-role="header">
+                <h1>Find Restaurant</h1>
+            </div>
+            <div data-role="main">
+                <p>Find restaurant content</p>
+            </div>
+            <div data-role="collapsible-set">
+
+             <div data-role="collapsible" data-collapsed="false">
+                   <h3>American</h3>
+                   <div data-role="content">
+        <div class="content-primary">   
+        <ul data-role="listview">
+            <li><a href="http://www.chick-fil-a.com/Locations/Locator" target="_blank">
+                <img src="images/chick-fil-a_meal1.jpg"/>
+                <h3>Chick-fila</h3>
+                <p>fast food</p>
+            </a></li>
+            <li><a href="http://giordanos.com/our-locations/" target="_blank">
+                <img src="images/Giordanos-Pizza.jpg" />
+                <h3>Giordanos</h3>
+                <p>pizzeria</p>
+            </a></li>
+         </div>
+    </div>
+
+                
+</div>
+    
+             <div data-role="collapsible">
+                 <h3>Chinese</h3>
+
+
+
+                   <div data-role="content">
+        <div class="content-primary">   
+        <ul data-role="listview">
+            <li><a href="http://www.pfchangs.com/mobile/locations.aspx" target="_blank">
+                <img src="images/pfChang.jpg" />
+                <h3>P.F Chang's</h3>
+                <p>chinese bistro</p>
+            </a></li>
+            <li><a href="https://www.pandaexpress.com/locations/" target="_blank">
+                <img src="images/pandaExpress.jpg" />
+                <h3>Panda Express</h3>
+                <p>chinese cuisine</p>
+            </a></li>
+         </div>
+    </div>
+               
+              </div>
+
+               <div data-role="collapsible">
+                 <h3>Spanish</h3>
+
+
+
+                   <div data-role="content">
+        <div class="content-primary">   
+        <ul data-role="listview">
+            <li><a href="http://www.urbanspoon.com/cities/2-chicago/restaurants/1566170-cafe-marbella/menu" target="_blank">
+                <img src="images/CafeMarbella.jpg" />
+                <h3>Cafe Marbella</h3>
+                <p>spanish bistro</p>
+            </a></li>
+            <li><a href="http://www.verachicago.com" target="_blank">
+                <img src="images/Vera.jpg" />
+                <h3>Vera</h3>
+                <p>spanish cuisine</p>
+            </a></li>
+         </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+            <div data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#homePage" data-transition="flip" data-icon="home"></a></li>
+                        <li><a data-icon="location"></a></li>
+                        <li><a href="#contactPage" data-transition="fade" data-icon="mail"></a></li>
+                    </ul>
+                </div>
+                <h2>Copyright &copy; 2014 by ChicagoHub</h2>
+            </div>
+        </div>
+        
+        
+        <div data-role="page" id="contactPage" data-theme="e">
+            <div data-role="header">
+                <h1>Contact</h1>
+                
+            </div>
+            <div data-role="main">
+                <p>Contact page content</p>
+                <form action="#" method="get">
+                    <label for="search">Search:</label>
+                    <input type="search" name="search" id="search" value="" />
+
+                    <label for="flip-1"> This is your first vist:</label>
+                    <select name="flip-1" id="flip-1" data-role="slider">
+                        <option value="off">No</option>
+                        <option value="on">Yes</option>
+                </select> 
+                <input type="text" data-role="date">
+                <label for="rate"> Rate us out of 5</label>
+                <input type="range" id="rate" name="rate" min="0" max="5"/>
+                <fieldset data-role="controlgroup">
+       <legend>Check if you want to receive:</legend>
+       <label><input type="checkbox" name="checkbox-0" /> Hard deals offers</label>
+       <label><input type="checkbox" name="checkbox-1" /> Chicahohub Emails</label>
+       <label><input type="checkbox" name="checkbox-2" /> Coupons, discounts</label>
+            </fieldset>
+
+                <label for="select-choice" class="select">Select your neighborhood:</label>
+<select name="select-choice-0" id="select-choice-0">
+   <option value="River North">River North</option>
+   <option value="South Loop">South Loop</option>
+   <option value="Hyde Park">Hyde Park</option>
+   <option value="Lake View">Lake View</option>
+   <option value="Northwest Side">Northwest Side</option>
+   <option value="South Side">South Side</option>
+   <option value="West/Southwest">West / Southwest</option>
+   
+</select>    
+
+
+            <div data-role="fieldcontain">
+                <label for="date">Share your birthday to recieve special offers:</label>
+                <input type="date" name="date" id="date" value=""  />
+            </div> 
+
+                    <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Tell us what you think !"></textarea>
+
+                <input type="submit" name="go" id="go" value="Submit">  
+        
+
+                </form>
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#homePage" data-transition="flip" data-icon="home"></a></li>
+                        <li><a href="#findRestaurantPage" data-transition="flow" data-icon="location"></a></li>
+                        <li><a data-icon="mail"></a></li>
+                    </ul>
+                </div>
+                <h2>Copyright &copy; 2014 by ChicagoHub</h2>
+            </div>
+        </div>
+    </body>
+    
+</html>
